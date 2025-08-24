@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derrick Johnson Resume</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        /* --- Print-specific styles for clean PDF output --- */
+        @media print {
+            body {
+                background-color: white; /* Remove background color */
+            }
+            .max-w-4xl {
+                max-width: 100%; /* Use full width for the document */
+                box-shadow: none; /* Remove box shadow */
+                border-radius: 0; /* Remove rounded corners */
+                padding: 0; /* Remove padding */
+            }
+            .header-print-grid {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                gap: 1rem;
+                align-items: start;
+            }
+            .contact-info-print {
+                text-align: right;
+                font-size: 10pt; /* Adjust font size for print legibility */
+            }
+            /* Adjusted font sizes to be smaller for print */
+            .name-print {
+                font-size: 28pt; /* Reduced from 32pt */
+            }
+            .title-print {
+                font-size: 14pt; /* Reduced from 16pt */
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 flex justify-center items-start min-h-screen">
+    <div class="max-w-4xl w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-10 lg:p-12">
+
+        <!-- Header and Contact Info -->
+        <!-- The header-print-grid class now handles the grid display specifically for printing. -->
+        <div class="header-print-grid flex flex-col sm:flex-row justify-between items-center sm:items-start mb-8">
+            <div class="text-center sm:text-left">
+                <!-- Adjusted font size classes to be one size smaller -->
+                <h1 class="name-print text-3xl sm:text-4xl font-extrabold text-gray-800 tracking-tight mb-1">Derrick Johnson</h1>
+                <!-- Adjusted font size classes to be one size smaller -->
+                <p class="title-print text-lg sm:text-xl font-medium text-gray-500">Enterprise Customer Success Leader | AI-Powered Workflow Architect | GTM Advisor</p>
+            </div>
+            <div class="contact-info-print mt-4 sm:mt-0 space-y-2 text-center sm:text-right text-sm sm:text-base text-gray-600">
+                <div class="flex items-center justify-center sm:justify-end gap-2">
+                    <!-- Mail Icon SVG from Lucide -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-gray-400"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span>dcjohnson.nyc@gmail.com</span>
+                </div>
+                <div class="flex items-center justify-center sm:justify-end gap-2">
+                    <!-- Phone Icon SVG from Lucide -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-gray-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2.08A19.95 19.95 0 0 1 8.82 2.18 2 2 0 0 1 10.84 0h3a2 2 0 0 1 2 2v3.06l1.24-.22a7.1 7.1 0 0 0 1.98-.82c.9-.45 1.5-1.16 1.5-2.02v-.08a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3.06a7.1 7.1 0 0 0-1.98.82c-.9.45-1.5 1.16-1.5 2.02v.08a2 2 0 0 1-2 2h-3zM12 18a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3z"/></svg>
+                    <span>718-689-0876</span>
+                </div>
+                <div class="flex items-center justify-center sm:justify-end gap-2">
+                    <!-- Linkedin Icon SVG from Lucide -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin text-gray-400"><path d="M16 8a6 6 0 0 1 6 6v7H18v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7H10v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <a href="https://linkedin.com/in/derrickjohnsonnyc" class="hover:underline text-gray-600">linkedin.com/in/derrickjohnsonnyc</a>
+                </div>
+                <div class="flex items-center justify-center sm:justify-end gap-2">
+                    <!-- Map Pin Icon SVG from Lucide -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-gray-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Maplewood, New Jersey</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Professional Summary</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Enterprise Customer Success leader with 10+ years helping global product-led organizations transform customer feedback into revenue-driving insights. I specialize in AI agent deployment, workflow automation, and metadata governance, enabling Fortune 500 and hypergrowth companies to scale customer intelligence programs. Known for bridging technical implementation with executive strategy, I translate complexity into clarity and feedback into action. Supported Amplitude’s growth journey through IPO, managing enterprise customer adoption at scale.
+            </p>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Work Experience</h2>
+            <div class="space-y-6">
+                <!-- Enterpret -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Strategic Customer Success Manager</h3>
+                        <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">Dec 2024 – Present</span>
+                    </div>
+                    <p class="text-base font-medium text-gray-600 mb-2">Enterpret | New York, NY</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Lead AI-powered customer intelligence programs across enterprise accounts, combining solution architecture, strategic advisory, and executive alignment.</li>
+                        <li>AI Agent Deployment & Strategy – Launched new Agents, LLM-powered summaries, and Slack-integrated alerts to flag churn risks, surface emerging issues, and identify roadmap opportunities.</li>
+                        <li>Metadata Governance & MCP Functions – Built real-time enrichment pipelines (Python, Cursor, CLI) to normalize CRM fields, unify lifecycle segments (VIP, Donor, Prospect), and calculate behavioral metrics.</li>
+                        <li>Feedback-to-Action Loop – Automated pipelines that convert unstructured feedback into Jira tickets, roadmap briefs, and executive VoC summaries using NLP and AI.</li>
+                        <li>Taxonomy & LLM Oversight – Co-led rollout of hierarchical taxonomies (L1–L3) and trained Product/CX teams on tracked keyword best practices and sentiment modeling.</li>
+                        <li>Executive Alignment – Designed and facilitated Customer Intelligence Blueprints and EBRs to surface product-market fit signals and guide investment decisions.</li>
+                        <li>Integration & QA Leadership – Directed ingestion and implementation across Salesforce, Zendesk, FullStory, and Typeform, ensuring data quality and enabling CDP-scale analytics.</li>
+                    </ul>
+                </div>
+                <!-- Amplitude -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Enterprise Customer Success Manager</h3>
+                        <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2021 – Dec 2024</span>
+                    </div>
+                    <p class="text-base font-medium text-gray-600 mb-2">Amplitude | New York, New York</p>
+                    <p class="text-gray-700 leading-relaxed mb-2">Amplitude is a product analytics platform that enables companies to build better products by tracking, analyzing & interpreting user behavior.</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Managed a portfolio of enterprise media and e-commerce clients to expand customer partnerships.</li>
+                        <li>Consulted customers on and created success plans for omni-channel product growth.</li>
+                        <li>Interviewed, Mentored, Enabled, and Managed smaller teams of junior CSMs in preparation for a move to Enterprise success management.</li>
+                        <li>Partnered with Product, Marketing, Engineering, & Sales to find new opportunities to grow our customer's adoption and also expand customer partnerships.</li>
+                        <li>Graduate of the Leadership Development Program (2023).</li>
+                    </ul>
+                </div>
+                <!-- Sailthru -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Sr. Customer Success Manager</h3>
+                        <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2019 – 2021</span>
+                    </div>
+                    <p class="text-base font-medium text-gray-600 mb-2">Sailthru | New York, New York</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Owned a portfolio of enterprise media & e-commerce accounts.</li>
+                        <li>Developed omni-channel marketing strategies driving measurable ROI.</li>
+                        <li>Presented QBRs with performance analysis and strategic recommendations.</li>
+                    </ul>
+                </div>
+                <!-- Kinnek -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Sr. Account Manager, Strategic Accounts</h3>
+                        <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2017 – 2019</span>
+                    </div>
+                    <p class="text-base font-medium text-gray-600 mb-2">Kinnek | New York, New York</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Created first Strategic Account Management playbook to reduce churn.</li>
+                        <li>Led liquidity initiatives and facilitated in-person QBRs with executive clients.</li>
+                    </ul>
+                </div>
+                <!-- InnRoad -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Sr. Account Manager</h3>
+                        <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2014 – 2016</span>
+                    </div>
+                    <p class="text-base font-medium text-gray-600 mb-2">InnRoad | New York, New York</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Scaled accounts from 300 → 650+ while maintaining 95% retention.</li>
+                        <li>Built and managed Client Services team; authored best-practice playbooks.</li>
+                    </ul>
+                </div>
+                <!-- Acxiom (Zeta Global) -->
+                <div>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                        <h3 class="text-lg font-semibold text-gray-800">Account Manager</h3>
+                        <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2013 – 2014</span>
+                    </div>
+                    <p class="text-base font-medium text-gray-600 mb-2">Acxiom (Zeta Global) | New York, New York</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Managed enterprise client relationships and campaign execution.</li>
+                        <li>Performed SQL queries for campaign data QA and optimization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Education</h2>
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                <h3 class="text-lg font-semibold text-gray-800">Bachelor of Business Administration; Finance & Marketing</h3>
+                <span class="text-sm font-medium text-gray-500 mt-1 sm:mt-0">2007</span>
+            </div>
+            <p class="text-sm font-medium text-gray-600 mb-2">Howard University</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="mb-0">
+            <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Technical Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 text-gray-700">
+                <div>
+                    <p class="font-semibold text-gray-800 mb-1">Strategy & Leadership</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>GTM planning</li>
+                        <li>Executive workshops</li>
+                        <li>Playbook and strategy creation</li>
+                        <li>Team enablement</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800 mb-1">Platforms</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Cursor</li>
+                        <li>Perplexity</li>
+                        <li>Claude</li>
+                        <li>Replit</li>
+                        <li>Salesforce</li>
+                        <li>Gainsight</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800 mb-1">AI & NLP</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>LLM-driven summarization</li>
+                        <li>NLP classification</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-800 mb-1">Metadata & Data Pipelines</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Python enrichment</li>
+                        <li>MCP functions</li>
+                        <li>CLI workflows</li>
+                        <li>Cursor deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
